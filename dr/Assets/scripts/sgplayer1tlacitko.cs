@@ -22,4 +22,9 @@ public class sgplayer1tlacitko : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void prechod2()
+    {
+        SceneManager.LoadScene(2);
+    }
 }
