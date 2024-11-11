@@ -15,7 +15,7 @@ C:/Users/tomas/Documents/GitHub/Tetris/dr
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-50343
+50945
 Successfully changed project path to: C:/Users/tomas/Documents/GitHub/Tetris/dr
 C:/Users/tomas/Documents/GitHub/Tetris/dr
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/tomas/Documents/GitHub/Tetris/dr
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [1896] Host "[IP] 172.16.1.87 [Port] 0 [Flags] 2 [Guid] 4093057642 [EditorId] 4093057642 [Version] 1048832 [Id] WindowsEditor(7,Lenovo) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [15636] Host "[IP] 172.16.1.87 [Port] 0 [Flags] 2 [Guid] 3293809181 [EditorId] 3293809181 [Version] 1048832 [Id] WindowsEditor(7,Lenovo) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [1896] Host "[IP] 172.16.1.87 [Port] 0 [Flags] 2 [Guid] 4093057642 [EditorId] 4093057642 [Version] 1048832 [Id] WindowsEditor(7,Lenovo) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [15636] Host "[IP] 172.16.1.87 [Port] 0 [Flags] 2 [Guid] 3293809181 [EditorId] 3293809181 [Version] 1048832 [Id] WindowsEditor(7,Lenovo) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-Refreshing native plugins compatible for Editor in 9.53 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 8.49 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.31f1 (4ede2d13e8b4)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56344
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56420
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008002 seconds.
-- Loaded All Assemblies, in  0.320 seconds
+Registered in 0.004993 seconds.
+- Loaded All Assemblies, in  0.296 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.233 seconds
-Domain Reload Profiling: 552ms
-	BeginReloadAssembly (91ms)
+- Finished resetting the current domain, in  0.239 seconds
+Domain Reload Profiling: 533ms
+	BeginReloadAssembly (96ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (64ms)
-	LoadAllAssembliesAndSetupDomain (125ms)
-		LoadAssemblies (89ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (114ms)
+		LoadAssemblies (94ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (123ms)
-			TypeCache.Refresh (122ms)
-				TypeCache.ScanAssembly (111ms)
+		AnalyzeDomain (113ms)
+			TypeCache.Refresh (112ms)
+				TypeCache.ScanAssembly (99ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (233ms)
+	FinalizeReload (239ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (184ms)
+		SetupLoadedEditorAssemblies (188ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
+			InitializePlatformSupportModulesInManaged (7ms)
 			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (128ms)
-			ProcessInitializeOnLoadMethodAttributes (39ms)
+			ProcessInitializeOnLoadAttributes (129ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,55 +115,55 @@ Domain Reload Profiling: 552ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.615 seconds
-Refreshing native plugins compatible for Editor in 3.82 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.579 seconds
+Refreshing native plugins compatible for Editor in 5.05 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.596 seconds
-Domain Reload Profiling: 1209ms
-	BeginReloadAssembly (148ms)
+- Finished resetting the current domain, in  0.651 seconds
+Domain Reload Profiling: 1227ms
+	BeginReloadAssembly (127ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (22ms)
-	RebuildCommonClasses (29ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (378ms)
-		LoadAssemblies (317ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (375ms)
+		LoadAssemblies (287ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (151ms)
-			TypeCache.Refresh (122ms)
-				TypeCache.ScanAssembly (108ms)
-			ScanForSourceGeneratedMonoScriptInfo (18ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (597ms)
+		AnalyzeDomain (163ms)
+			TypeCache.Refresh (132ms)
+				TypeCache.ScanAssembly (117ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (651ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (452ms)
+		SetupLoadedEditorAssemblies (469ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (60ms)
-			ProcessInitializeOnLoadAttributes (341ms)
-			ProcessInitializeOnLoadMethodAttributes (37ms)
-			AfterProcessingInitializeOnLoad (5ms)
+			BeforeProcessingInitializeOnLoad (63ms)
+			ProcessInitializeOnLoadAttributes (358ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 4.67 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 5.02 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4086 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 65 unused Assets / (61.8 KB). Loaded Objects now: 4546.
-Memory consumption went from 146.5 MB to 146.4 MB.
-Total: 2.927400 ms (FindLiveObjects: 0.257800 ms CreateObjectMapping: 0.105000 ms MarkObjects: 2.397200 ms  DeleteObjects: 0.165900 ms)
+Memory consumption went from 146.6 MB to 146.6 MB.
+Total: 2.825000 ms (FindLiveObjects: 0.219300 ms CreateObjectMapping: 0.114800 ms MarkObjects: 2.349500 ms  DeleteObjects: 0.139900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -181,61 +181,431 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 783.922314 seconds.
-  path: Assets/obrazky/scena1/tabseting.png
-  artifactKey: Guid(b06e1a559d6ebdf4d8aec999b64a668e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/obrazky/scena1/tabseting.png using Guid(b06e1a559d6ebdf4d8aec999b64a668e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+  Time since last request: 2232.583867 seconds.
+  path: Assets/obrazky/scena0/title-screenbuttons1.png
+  artifactKey: Guid(8fa8b622999c62c489a82e415b1eb0b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena0/title-screenbuttons1.png using Guid(8fa8b622999c62c489a82e415b1eb0b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '1528dd4f6c332870a7c45abb7d8d9e29') in 0.086842 seconds
+ -> (artifact id: '71224118b97bbc137cc52a64c10690b2') in 0.086284 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/obrazky/scena1/musicbuttonoff.png
-  artifactKey: Guid(e58404de23565bb4783e4f496fcb0eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/obrazky/scena1/musicbuttonoff.png using Guid(e58404de23565bb4783e4f496fcb0eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+  Time since last request: 0.000035 seconds.
+  path: Assets/obrazky/scena0/title-screen1.png
+  artifactKey: Guid(e63fea684cde43f4dba4e37f805e6d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena0/title-screen1.png using Guid(e63fea684cde43f4dba4e37f805e6d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'c331dd8d05a346876ebf91254770405f') in 0.016538 seconds
+ -> (artifact id: '54333d5ba3cc41093b9b25120b8a351e') in 0.017358 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/obrazky/scena0/title-screenbackground.png
-  artifactKey: Guid(26d3448f6d9f548409fc39e9aff26633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/obrazky/scena0/title-screenbackground.png using Guid(26d3448f6d9f548409fc39e9aff26633) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+  Time since last request: 0.000023 seconds.
+  path: Assets/obrazky/scena0/title-screenbuttons2ň.png
+  artifactKey: Guid(1199234e844acc747a7889b13d73e839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena0/title-screenbuttons2ň.png using Guid(1199234e844acc747a7889b13d73e839) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'f1d901509a65fd0fce0198540d16625c') in 0.012869 seconds
+ -> (artifact id: '184dbeb3a13c4b239eb9eee88e281f7f') in 0.014110 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/obrazky/scena1/speedon.png
-  artifactKey: Guid(74835c2779e71204eb9a5f803856eb01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/obrazky/scena1/speedon.png using Guid(74835c2779e71204eb9a5f803856eb01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+  Time since last request: 1.164076 seconds.
+  path: Assets/obrazky/scena1/hodnota.png
+  artifactKey: Guid(8ff61b66e5c2f94468b37f287cafd2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena1/hodnota.png using Guid(8ff61b66e5c2f94468b37f287cafd2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'a3db52d0e8c9a3f89884b06fb4fc3398') in 0.015405 seconds
+ -> (artifact id: '7dcdecc5595b136d02a877666d6abcf2') in 0.022627 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
   Time since last request: 0.000020 seconds.
-  path: Assets/obrazky/scena0/title-screenbuttons2ň.png
-  artifactKey: Guid(1199234e844acc747a7889b13d73e839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/obrazky/scena0/title-screenbuttons2ň.png using Guid(1199234e844acc747a7889b13d73e839) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+  path: Assets/obrazky/scena1/virusoff.png
+  artifactKey: Guid(7dc1982d784f7c84da09c6ab70740228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena1/virusoff.png using Guid(7dc1982d784f7c84da09c6ab70740228) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '184dbeb3a13c4b239eb9eee88e281f7f') in 0.014428 seconds
+ -> (artifact id: 'f8dd365e78bca17262c1af27fbe36ef6') in 0.018146 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/obrazky/scena1/startbutton.png
-  artifactKey: Guid(f8f0930c044be6e4dafa940d254f9a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/obrazky/scena1/startbutton.png using Guid(f8f0930c044be6e4dafa940d254f9a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+  Time since last request: 0.000026 seconds.
+  path: Assets/obrazky/scena1/speedon.png
+  artifactKey: Guid(74835c2779e71204eb9a5f803856eb01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena1/speedon.png using Guid(74835c2779e71204eb9a5f803856eb01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'acb7a0561566620911b885ff404c6af0') in 0.017260 seconds
+ -> (artifact id: 'bd3ff19dfc8e4e33fbfa7085a0c04352') in 0.023096 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/obrazky/scena1/vsetko.png
+  artifactKey: Guid(1a9fc5e2a1653604fb3f2803ff631f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena1/vsetko.png using Guid(1a9fc5e2a1653604fb3f2803ff631f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a25ea684d664bf7e8a21b0be4c3f60a6') in 0.034721 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.974827 seconds.
+  path: Assets/Scenes/scena2
+  artifactKey: Guid(0e03607c3fc42394ba519ec5ba4ad9b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/scena2 using Guid(0e03607c3fc42394ba519ec5ba4ad9b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8a1c5965600109c28e9ba21c14552207') in 0.000514 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.236319 seconds.
+  path: Assets/Scenes/scena2/lvl.unity
+  artifactKey: Guid(a4f41556d4c0ba54fb3bdd87dca28a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/scena2/lvl.unity using Guid(a4f41556d4c0ba54fb3bdd87dca28a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f634175be9f5208d343f9e0c3000dd58') in 0.000545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.852710 seconds.
+  path: Assets/Scenes/scena2/gamescane.unity
+  artifactKey: Guid(4cc383e16cee9e945bce7e5fef107cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/scena2/gamescane.unity using Guid(4cc383e16cee9e945bce7e5fef107cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '465e9779d318cfa893eca171647e00aa') in 0.000543 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 7.918572 seconds.
+  path: Assets/Scenes/scena1/startbutton.png
+  artifactKey: Guid(2616b5753c90db94581267e53de92699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/scena1/startbutton.png using Guid(2616b5753c90db94581267e53de92699) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '82727175c15b07e47b43ddc0e55d491e') in 0.014895 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/scena1/unnamed (2).png
+  artifactKey: Guid(a05bd625861d0a9498bf51378e8cdfe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/scena1/unnamed (2).png using Guid(a05bd625861d0a9498bf51378e8cdfe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '9a30d3de876d9ed586bd89fda3f62231') in 0.024040 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.939179 seconds.
+  path: Assets/Scenes/scena1/slidercode.cs
+  artifactKey: Guid(47cf524ceb68f3c4d9cdbbae0884a135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/scena1/slidercode.cs using Guid(47cf524ceb68f3c4d9cdbbae0884a135) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '89e9090edeab847986c755faa4426379') in 0.000830 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.423933 seconds.
+  path: Assets/Scenes/scena1/lvlstart.cs
+  artifactKey: Guid(ddb35b19672257c47be5429995791e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/scena1/lvlstart.cs using Guid(ddb35b19672257c47be5429995791e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4d08f994eb9e5dc537ac0d26169d39bf') in 0.000463 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.860614 seconds.
+  path: Assets/Scenes/scena1/level settings.cs
+  artifactKey: Guid(80216a7cb3aa1b5409093045c3d4d805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/scena1/level settings.cs using Guid(80216a7cb3aa1b5409093045c3d4d805) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd4866e615825a8737157d8f5dc8540b0') in 0.000458 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 7.993597 seconds.
+  path: Assets/Scenes/scena1/levelsetting.unity
+  artifactKey: Guid(beeee8cf585289848bd5d585aba4a6de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/scena1/levelsetting.unity using Guid(beeee8cf585289848bd5d585aba4a6de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '7fe61cea29a9e1e529c43d21d1fbc216') in 0.000763 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 230.758284 seconds.
+  path: Assets/obrazky/scena2/scena2.png
+  artifactKey: Guid(079b34ca95604b14eb9785e1a52da087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2/scena2.png using Guid(079b34ca95604b14eb9785e1a52da087) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c7c7dc288ae7837c472a0f1461374e7a') in 0.027343 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 58.049738 seconds.
+  path: Assets/obrazky/scena2
+  artifactKey: Guid(705688661a7579f4cb0d5aef6197711c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2 using Guid(705688661a7579f4cb0d5aef6197711c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '41ff04fd1439c99c1f33de747eb2310c') in 0.001082 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 8.307222 seconds.
+  path: Assets/obrazky/scena2/virusi
+  artifactKey: Guid(27fb899eb1ae8c144b1cc98d956bd82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2/virusi using Guid(27fb899eb1ae8c144b1cc98d956bd82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '434202cb4d7f21cab9bd10ad72c6b0c1') in 0.000499 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.383 seconds
+Refreshing native plugins compatible for Editor in 4.01 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.853 seconds
+Domain Reload Profiling: 1233ms
+	BeginReloadAssembly (139ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (179ms)
+		LoadAssemblies (235ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (854ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (409ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (56ms)
+			ProcessInitializeOnLoadAttributes (313ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 3.80 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4061 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (35.7 KB). Loaded Objects now: 4577.
+Memory consumption went from 145.0 MB to 145.0 MB.
+Total: 2.992400 ms (FindLiveObjects: 0.308300 ms CreateObjectMapping: 0.249200 ms MarkObjects: 2.377700 ms  DeleteObjects: 0.056200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 716.964952 seconds.
+  path: Assets/obrazky/scena2/virusi/charaktery.png
+  artifactKey: Guid(288c6422ee34ce94a937bc914667762a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2/virusi/charaktery.png using Guid(288c6422ee34ce94a937bc914667762a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'bcebd364e500a7f37d5358618e956cf8') in 0.088318 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.474714 seconds.
+  path: Assets/obrazky/scena2/scena2.png
+  artifactKey: Guid(079b34ca95604b14eb9785e1a52da087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2/scena2.png using Guid(079b34ca95604b14eb9785e1a52da087) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '779892f28b4aa70427b514632a74879e') in 0.023262 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 23.671128 seconds.
+  path: Assets/obrazky/scena2/virusi/vyrusi
+  artifactKey: Guid(ff77e3bcdd315f94ba8cc6b0d3a6e82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2/virusi/vyrusi using Guid(ff77e3bcdd315f94ba8cc6b0d3a6e82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2a5200b4899ddbcf4a6625951256fb21') in 0.000627 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 5.927169 seconds.
+  path: Assets/obrazky/scena2/virusi/pilulky
+  artifactKey: Guid(64b964635616b8341830bac2352bdcd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2/virusi/pilulky using Guid(64b964635616b8341830bac2352bdcd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2ed97c88ca46cc433cc7b5c1fc4ea733') in 0.000779 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 15.968846 seconds.
+  path: Assets/obrazky/scena2/virusi/mario
+  artifactKey: Guid(37e7176105c5f4549b70b589e474e0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2/virusi/mario using Guid(37e7176105c5f4549b70b589e474e0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f5451dd7f6b6f16d9e97eb1af08defba') in 0.000530 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 54.638525 seconds.
+  path: Assets/obrazky/scena2/virusi/mario/mario1.png
+  artifactKey: Guid(de61904228d49a04aa5a67371503f096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2/virusi/mario/mario1.png using Guid(de61904228d49a04aa5a67371503f096) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '99f564a32b1a7db7491912aa81c10a50') in 0.022996 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 30.069999 seconds.
+  path: Assets/obrazky/scena2/virusi/mario/mario1.png
+  artifactKey: Guid(de61904228d49a04aa5a67371503f096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2/virusi/mario/mario1.png using Guid(de61904228d49a04aa5a67371503f096) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2865f60254ca5820eba23aff92162870') in 0.008917 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 394.611286 seconds.
+  path: Assets/obrazky/scena2/virusi/mario/mario2.png
+  artifactKey: Guid(23b01f6af3e8cdc458fc8b0bf5d82d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2/virusi/mario/mario2.png using Guid(23b01f6af3e8cdc458fc8b0bf5d82d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8320b5aa155297f81543c01149c17f0f') in 0.021269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 136.928631 seconds.
+  path: Assets/obrazky/scena2/virusi/vyrusi/zlty
+  artifactKey: Guid(dbbe4d1b06769814a90b0b41110bbc3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2/virusi/vyrusi/zlty using Guid(dbbe4d1b06769814a90b0b41110bbc3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ca3e1edd70996020015ffcab7302a0ad') in 0.000784 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 252.357264 seconds.
+  path: Assets/obrazky/scena2/virusi/vyrusi/zlty/animacia.png
+  artifactKey: Guid(018e85d4b2216484e93d5886d7767a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2/virusi/vyrusi/zlty/animacia.png using Guid(018e85d4b2216484e93d5886d7767a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c42794d7dcd2a65ed273c592a0449d15') in 0.023296 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 9.639872 seconds.
+  path: Assets/obrazky/scena2/virusi/vyrusi/modry
+  artifactKey: Guid(e5ed926e17cf3124bb1cfc760a410e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2/virusi/vyrusi/modry using Guid(e5ed926e17cf3124bb1cfc760a410e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'bab2d3560d2141fbf9412df9cb32137e') in 0.000535 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 46.766582 seconds.
+  path: Assets/obrazky/scena2/virusi/vyrusi/modry/herny1.png
+  artifactKey: Guid(566d4d55f46d47c49ae0d9c6c1f79e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2/virusi/vyrusi/modry/herny1.png using Guid(566d4d55f46d47c49ae0d9c6c1f79e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c5082f09f5cbe8913937cf47e29eeed5') in 0.022287 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 10.266197 seconds.
+  path: Assets/obrazky/scena2/virusi/vyrusi/modry/herny2.png
+  artifactKey: Guid(400a6a7c293364645a3d72a7e04c84e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2/virusi/vyrusi/modry/herny2.png using Guid(400a6a7c293364645a3d72a7e04c84e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '18794946b59ab192f0d47814fc2fcec4') in 0.020896 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 277.472900 seconds.
+  path: Assets/obrazky/scena2/virusi/vyrusi/modry/animacia.png
+  artifactKey: Guid(e40f7ad9924088f4d9d7a2c6427e1cf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2/virusi/vyrusi/modry/animacia.png using Guid(e40f7ad9924088f4d9d7a2c6427e1cf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ced0faed7bcdb8e6ab5630afdb59d470') in 0.018822 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 10.495298 seconds.
+  path: Assets/obrazky/scena2/virusi/pilulky/zlta
+  artifactKey: Guid(85af3a6a81603fe46a3e4a5b3e943e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2/virusi/pilulky/zlta using Guid(85af3a6a81603fe46a3e4a5b3e943e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd6983b04ac6fd39bd30151e7af537e51') in 0.000562 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 121.790215 seconds.
+  path: Assets/obrazky/scena2/virusi/pilulky/modry
+  artifactKey: Guid(cbd7b6eda2219a74699391118289463a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2/virusi/pilulky/modry using Guid(cbd7b6eda2219a74699391118289463a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1de960ca77356f681958c6bc32972d6b') in 0.000602 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 128.903900 seconds.
+  path: Assets/obrazky/scena2/virusi/vyrusi/cerveny/animaciadoSkumavky.png
+  artifactKey: Guid(56ca79fbde7c307499112354930da573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2/virusi/vyrusi/cerveny/animaciadoSkumavky.png using Guid(56ca79fbde7c307499112354930da573) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '240f894b183ea5e2300e5ffacd2d8cc1') in 0.022248 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/obrazky/scena2/virusi/vyrusi/cerveny/herny2.png
+  artifactKey: Guid(a94d31c853a8bd045b92ec6886f1f4cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2/virusi/vyrusi/cerveny/herny2.png using Guid(a94d31c853a8bd045b92ec6886f1f4cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '7b129774530d112f44aee52aafdb6d13') in 0.019533 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 8.431010 seconds.
+  path: Assets/obrazky/scena2/virusi/charaktery.png
+  artifactKey: Guid(288c6422ee34ce94a937bc914667762a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/obrazky/scena2/virusi/charaktery.png using Guid(288c6422ee34ce94a937bc914667762a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a9b94e36fcec2669d1b1f676a912e8d7') in 0.022819 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
