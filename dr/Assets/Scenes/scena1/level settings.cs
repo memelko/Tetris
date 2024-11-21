@@ -1,6 +1,8 @@
-using UnityEngine; 
+﻿using Microsoft.Unity.VisualStudio.Editor;
+using UnityEngine;
+using UnityEngine.UIElements;
 
- 
+
 
 public class manazer : MonoBehaviour 
 
@@ -9,6 +11,8 @@ public class manazer : MonoBehaviour
     public int VirusLvl = 1;
     public int MusicType = 0; // premenna, ktora sa bude presuvat scenami 
     public static manazer jedinacik; // STATICKY objekt typu ROVNAKA TRIEDA==singleton 
+
+   
     void Awake() // spusti sa este pred vytvorenim objektu 
     { 
         if (jedinacik != null) // ak uz existuje takyto singleton / objekt... 
@@ -48,5 +52,11 @@ public class manazer : MonoBehaviour
     {
         Speed = 3;
     }
+
+    //textury na tlačitka
+    public void SPEED() 
+    {
+        
+    } 
     
 } 
