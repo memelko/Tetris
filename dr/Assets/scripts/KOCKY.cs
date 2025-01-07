@@ -13,10 +13,35 @@ public class RandomSpawner : MonoBehaviour
     public float zrychlenaRychlost = 2f; // Rýchlosť pri držaní Shift
     public float pohybHorizontalny = 1f; // Rýchlosť pohybu do strán
 
+    private GameObject aktualnaKocka; // Aktuálna pohybujúca sa kocka
+    private bool zastavena = false;  // Indikátor, či sa aktuálna kocka zastavila
+
     void Start()
     {
         // Spustenie opakovanej funkcie spawnu
         InvokeRepeating("SpawnKocku", 0f, spawnInterval);
+    }
+
+    void Update()
+    {
+        if (aktualnaKocka != null && !zastavena)
+        {
+            // Pohyb nadol
+            float aktualnaRychlost = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift) ? zrychlenaRychlost : rychlostPadania;
+            aktualnaKocka.transform.Translate(Vector3.down * aktualnaRychlost * Time.deltaTime);
+
+            // Pohyb doľava
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                aktualnaKocka.transform.Translate(Vector3.left * pohybHorizontalny);
+            }
+
+            // Pohyb doprava
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                aktualnaKocka.transform.Translate(Vector3.right * pohybHorizontalny);
+            }
+        }
     }
 
     void SpawnKocku()
@@ -25,46 +50,42 @@ public class RandomSpawner : MonoBehaviour
         {
             // Náhodne vyberie jednu kocku z poľa
             int index = Random.Range(0, kocky.Length);
-            GameObject novaKocka = Instantiate(kocky[index], spawnPozicia, Quaternion.identity);
+            aktualnaKocka = Instantiate(kocky[index], spawnPozicia, Quaternion.identity);
 
-            // Pridanie pohybového skriptu k novej kocke
-            novaKocka.AddComponent<MovingCube>().Initialize(rychlostPadania, zrychlenaRychlost, pohybHorizontalny);
+            // Pridanie komponentov pre fyziku a kolízie
+            Rigidbody2D rb = aktualnaKocka.GetComponent<Rigidbody2D>();
+            if (rb == null)
+            {
+                rb = aktualnaKocka.AddComponent<Rigidbody2D>();
+            }
+            rb.bodyType = RigidbodyType2D.Dynamic; // Nastavenie na dynamický objekt
+            rb.gravityScale = 0; // Deaktivácia gravitácie (padanie riadené kódom)
 
-            // Zničenie kocky po 8 sekundách
-            Destroy(novaKocka, 8f);
+            if (!aktualnaKocka.TryGetComponent(out BoxCollider2D _))
+            {
+                aktualnaKocka.AddComponent<BoxCollider2D>();
+            }
+
+            zastavena = false; // Kocka nie je zastavená
         }
     }
-}
 
-public class MovingCube : MonoBehaviour
-{
-    private float rychlostPadania;
-    private float zrychlenaRychlost;
-    private float pohybHorizontalny;
-
-    public void Initialize(float rychlost, float zrychlena, float pohyb)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        rychlostPadania = rychlost;
-        zrychlenaRychlost = zrychlena;
-        pohybHorizontalny = pohyb;
-    }
-
-    void Update()
-    {
-        // Pohyb nadol
-        float aktualnaRychlost = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift) ? zrychlenaRychlost : rychlostPadania;
-        transform.Translate(Vector3.down * aktualnaRychlost * Time.deltaTime);
-
-        // Pohyb doľava
-        if (Input.GetKeyDown(KeyCode.A))
+        print("Boom");
+        zastavena = true;
+        if (aktualnaKocka != null && collision.gameObject != null)
         {
-            transform.Translate(Vector3.left * pohybHorizontalny);
-        }
+            // Zastavenie aktuálnej kocky pri dotyku s iným objektom
+            zastavena = true;
 
-        // Pohyb doprava
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            transform.Translate(Vector3.right * pohybHorizontalny);
+            // Fixácia aktuálnej kocky na pozícii
+            Rigidbody2D rb = aktualnaKocka.GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                rb.velocity = Vector2.zero;
+                rb.bodyType = RigidbodyType2D.Static; // Zastavenie pohybu kocky
+            }
         }
     }
 }

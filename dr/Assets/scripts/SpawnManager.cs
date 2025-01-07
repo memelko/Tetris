@@ -6,9 +6,11 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject r, b, y, e;
     public GameObject[,] pole = new GameObject[16, 8];
+    private GameObject currentBlock;
 
     void Start()
     {
+        SpawnNewBlock();
         for (int i = 0; i < 16; i++)
         {
             for (int j = 0; j < 8; j++)
@@ -51,6 +53,10 @@ public class SpawnManager : MonoBehaviour
             }
         }
     }
+    private void Update()
+    {
+        
+    }
     public void checker()
     {
         // Check rows for matching 4 objects
@@ -63,7 +69,7 @@ public class SpawnManager : MonoBehaviour
                     pole[i, j].tag == pole[i, j + 2].tag &&
                     pole[i, j].tag == pole[i, j + 3].tag)
                 {
-                    Debug.Log($"Match found at row ({i}): {j}, {j + 1}, {j + 2}, {j + 3}");
+                    
 
                     Destroy(pole[i, j]);
                     Destroy(pole[i, j + 1]);
@@ -103,8 +109,33 @@ public class SpawnManager : MonoBehaviour
             }
         }
     }
+    public void SpawnNewBlock()
+    {
+        // Randomly choose a color for the new block
+        int randomColor = Random.Range(1, 4);
+        GameObject blockPrefab = r; // Default to red
+
+        if (randomColor == 2) blockPrefab = b;
+        else if (randomColor == 3) blockPrefab = y;
+
+        // Spawn the block at the top of the field
+        currentBlock = Instantiate(blockPrefab, new Vector3(0.4f, 4.5f, 0), Quaternion.identity);
+        currentBlock.AddComponent<FallingBlock>(); // Attach the FallingBlock script
+    }
+    public void PlaceBlock(Vector3 position, GameObject block)
+    {
+        int row = Mathf.RoundToInt((4.5f - position.y) / 0.5f);
+        int col = Mathf.RoundToInt((3 - position.x) / 0.65f);
+
+        // Place the block in the grid
+        pole[row, col] = block;
+
+        // Check for matches after placing the block
+        checker();
+    }
 
 }
+
 
 
 
