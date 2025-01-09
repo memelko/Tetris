@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.SceneManagement;
 
 public class SpawnManager : MonoBehaviour
 {
     public GameObject r, b, y, e;
     public GameObject[,] pole = new GameObject[16, 8];
     private GameObject currentBlock;
-
+    int score = 0;//tono
+    public TMP_Text Score;//tono
+    int pocetV = 0;//tono
     void Start()
     {
         SpawnNewBlock();
@@ -27,14 +32,17 @@ public class SpawnManager : MonoBehaviour
                     if (typ == 1)
                     {
                         pole[i, j] = Instantiate(r, Vector3.zero, Quaternion.identity);
+                        pocetV =  +1; //tono
                     }
                     else if (typ == 2)
                     {
                         pole[i, j] = Instantiate(r, Vector3.zero, Quaternion.identity);
+                        pocetV = +1;//tono
                     }
                     else if (typ == 3)
                     {
                         pole[i, j] = Instantiate(r, Vector3.zero, Quaternion.identity);
+                        pocetV = +1;//tono
                     }
                     else
                     {
@@ -52,10 +60,15 @@ public class SpawnManager : MonoBehaviour
                 pole[i, j].transform.position = new Vector3(3 - j * 0.65f, 4.5f - i * 0.5f, 0);
             }
         }
+        UpdateScoreText();//tono
     }
     private void Update()
     {
-        
+        UpdateScoreText();//tono
+        if (pocetV == 0) 
+        {
+            konecnaScena();
+        }
     }
     public void checker()
     {
@@ -75,11 +88,13 @@ public class SpawnManager : MonoBehaviour
                     Destroy(pole[i, j + 1]);
                     Destroy(pole[i, j + 2]);
                     Destroy(pole[i, j + 3]);
+                   
 
                     pole[i, j] = Instantiate(e, Vector3.zero, Quaternion.identity);
                     pole[i, j + 1] = Instantiate(e, Vector3.zero, Quaternion.identity);
                     pole[i, j + 2] = Instantiate(e, Vector3.zero, Quaternion.identity);
                     pole[i, j + 3] = Instantiate(e, Vector3.zero, Quaternion.identity);
+                    
                 }
             }
         }
@@ -100,11 +115,12 @@ public class SpawnManager : MonoBehaviour
                     Destroy(pole[i + 1, j]);
                     Destroy(pole[i + 2, j]);
                     Destroy(pole[i + 3, j]);
-
+                    score += 400;//tono
                     pole[i, j] = Instantiate(e, Vector3.zero, Quaternion.identity);
                     pole[i + 1, j] = Instantiate(e, Vector3.zero, Quaternion.identity);
                     pole[i + 2, j] = Instantiate(e, Vector3.zero, Quaternion.identity);
                     pole[i + 3, j] = Instantiate(e, Vector3.zero, Quaternion.identity);
+                    pocetV = -4;//tono
                 }
             }
         }
@@ -121,6 +137,7 @@ public class SpawnManager : MonoBehaviour
         // Spawn the block at the top of the field
         currentBlock = Instantiate(blockPrefab, new Vector3(0.4f, 4.5f, 0), Quaternion.identity);
         currentBlock.AddComponent<FallingBlock>(); // Attach the FallingBlock script
+       
     }
     public void PlaceBlock(Vector3 position, GameObject block)
     {
@@ -132,6 +149,14 @@ public class SpawnManager : MonoBehaviour
 
         // Check for matches after placing the block
         checker();
+    }
+    void UpdateScoreText()
+    {
+        Score.text =  score.ToString(); //tono
+    }
+    public void konecnaScena() //tono
+    {
+        SceneManager.LoadScene(2);
     }
 
 }

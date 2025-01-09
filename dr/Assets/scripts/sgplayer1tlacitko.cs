@@ -22,9 +22,16 @@ public class sgplayer1tlacitko : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
-
-    public void prechod2()
+    public void vyhralSi()
     {
         SceneManager.LoadScene(2);
+    }
+    public void PrehralSI()
+    {
+        SceneManager.LoadScene(2);
+    }
+    public void HratZnova()
+    {
+        SceneManager.LoadScene(0);
     }
 }

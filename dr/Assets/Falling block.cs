@@ -1,4 +1,6 @@
+
 using UnityEngine;
+
 
 
 public class FallingBlock : MonoBehaviour
@@ -8,6 +10,7 @@ public class FallingBlock : MonoBehaviour
 
     void Update()
     {
+       
         // Make the block fall over time
         fallTimer += Time.deltaTime;
         if (fallTimer >= fallSpeed)
@@ -37,6 +40,7 @@ public class FallingBlock : MonoBehaviour
             FindObjectOfType<SpawnManager>().PlaceBlock(transform.position, gameObject);
             FindObjectOfType<SpawnManager>().SpawnNewBlock();
             Destroy(this); // Remove this script from the block
+            
         }
     }
 }
