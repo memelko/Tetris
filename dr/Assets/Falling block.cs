@@ -32,15 +32,25 @@ public class FallingBlock : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log($"Collision with: {collision.gameObject.name}");
+
         if (collision.gameObject.layer == LayerMask.NameToLayer("Blocks") ||
-            collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
+            collision.gameObject.layer == LayerMask.NameToLayer("Ground") ||
+            collision.gameObject.layer == LayerMask.NameToLayer("Falling blocks"))
         {
+            BoxCollider2D boxCollider = GetComponent<BoxCollider2D>();
+            if (boxCollider != null)
+            {
+                boxCollider.isTrigger = true;
+            }
             FindObjectOfType<SpawnManager>().PlaceBlock(transform.position, gameObject);
             FindObjectOfType<SpawnManager>().SpawnNewBlock();
+            print(collision.gameObject.tag);
             Destroy(this); // Remove this script from the block
-            
+
         }
     }
+
 }

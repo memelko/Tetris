@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class SpawnManager : MonoBehaviour
 {
-    public GameObject r, b, y, e;
+    public GameObject r, b, y, e, TR, TB, TY;
     public GameObject[,] pole = new GameObject[16, 8];
     private GameObject currentBlock;
     int score = 0;//tono
@@ -121,24 +121,25 @@ public class SpawnManager : MonoBehaviour
                     pole[i + 2, j] = Instantiate(e, Vector3.zero, Quaternion.identity);
                     pole[i + 3, j] = Instantiate(e, Vector3.zero, Quaternion.identity);
                     pocetV = -4;//tono
+                    
                 }
             }
         }
     }
     public void SpawnNewBlock()
     {
-        // Randomly choose a color for the new block
+        // Randomly color
         int randomColor = Random.Range(1, 4);
-        GameObject blockPrefab = r; // Default to red
+        GameObject blockPrefab = TR; // Default to red
 
-        if (randomColor == 2) blockPrefab = b;
-        else if (randomColor == 3) blockPrefab = y;
+        if (randomColor == 2) blockPrefab = TB;
+        else if (randomColor == 3) blockPrefab = TY;
 
-        // Spawn the block at the top of the field
+        // Spawn block 
         currentBlock = Instantiate(blockPrefab, new Vector3(0.4f, 4.5f, 0), Quaternion.identity);
-        currentBlock.AddComponent<FallingBlock>(); // Attach the FallingBlock script
-       
+        currentBlock.AddComponent<FallingBlock>(); // click the scirpt to the block
     }
+
     public void PlaceBlock(Vector3 position, GameObject block)
     {
         int row = Mathf.RoundToInt((4.5f - position.y) / 0.5f);
