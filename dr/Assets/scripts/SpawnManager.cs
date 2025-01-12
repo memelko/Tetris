@@ -65,7 +65,7 @@ public class SpawnManager : MonoBehaviour
     private void Update()
     {
         UpdateScoreText();//tono
-        if (pocetV == 0) 
+        if (pocetV <= 0) 
         {
             konecnaVScena();
         }
