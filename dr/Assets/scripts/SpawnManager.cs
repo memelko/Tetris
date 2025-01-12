@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -12,7 +12,7 @@ public class SpawnManager : MonoBehaviour
     private GameObject currentBlock;
     int score = 0;//tono
     public TMP_Text Score;//tono
-    int pocetV = 0;//tono
+    public int pocetV = 0;//tono
     void Start()
     {
         SpawnNewBlock();
@@ -32,17 +32,17 @@ public class SpawnManager : MonoBehaviour
                     if (typ == 1)
                     {
                         pole[i, j] = Instantiate(r, Vector3.zero, Quaternion.identity);
-                        pocetV =  +1; //tono
+                        pocetV ++; //tono
                     }
                     else if (typ == 2)
                     {
                         pole[i, j] = Instantiate(b, Vector3.zero, Quaternion.identity);
-                        pocetV = +1;//tono
+                        pocetV ++;//tono
                     }
                     else if (typ == 3)
                     {
                         pole[i, j] = Instantiate(y, Vector3.zero, Quaternion.identity);
-                        pocetV = +1;//tono
+                        pocetV ++;//tono
                     }
                     else
                     {
@@ -67,7 +67,7 @@ public class SpawnManager : MonoBehaviour
         UpdateScoreText();//tono
         if (pocetV == 0) 
         {
-            konecnaScena();
+            konecnaVScena();
         }
     }
     public void checker()
@@ -145,20 +145,46 @@ public class SpawnManager : MonoBehaviour
         int row = Mathf.RoundToInt((4.5f - position.y) / 0.5f);
         int col = Mathf.RoundToInt((3 - position.x) / 0.65f);
 
-        // Place the block in the grid
         pole[row, col] = block;
 
-        // Check for matches after placing the block
-        checker();
+        checker(); // Skontrolovať zápasy
+        CheckForFullRows(); // Skontrolovať plné riadky
     }
     void UpdateScoreText()
     {
         Score.text =  score.ToString(); //tono
     }
-    public void konecnaScena() //tono
+    public void konecnaVScena() //tono
     {
         SceneManager.LoadScene(2);
     }
+    public void konecnaPScena() //tono
+    {
+        SceneManager.LoadScene(3);
+    }
+    private bool IsRowFull(int row)
+    {
+        for (int col = 0; col < pole.GetLength(1); col++)
+        {
+            if (pole[row, col].tag == "Empty")
+            {
+                return false; // Ak nájde prázdnu bunku, riadok nie je plný
+            }
+        }
+        return true; // Ak sú všetky bunky plné, riadok je plný
+    }
+    private void CheckForFullRows()
+    {
+        for (int i = 0; i < pole.GetLength(0); i++) // Prechádza všetky riadky
+        {
+            if (IsRowFull(i))
+            {
+                konecnaPScena();
+            }
+        }
+    }
+
+    
 
 }
 
