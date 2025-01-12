@@ -44,7 +44,8 @@ public class FallingBlock : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Blocks") ||
             collision.gameObject.layer == LayerMask.NameToLayer("Ground") ||
-            collision.gameObject.layer == LayerMask.NameToLayer("Falling blocks"))
+            collision.gameObject.layer == LayerMask.NameToLayer("Falling blocks") ||
+            collision.gameObject.layer == LayerMask.NameToLayer("Dumb blocks"))
         {
             // Set the layer directly to "Dumb blocks"
             gameObject.layer = LayerMask.NameToLayer("Dumb blocks");
