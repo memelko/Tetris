@@ -36,12 +36,12 @@ public class SpawnManager : MonoBehaviour
                     }
                     else if (typ == 2)
                     {
-                        pole[i, j] = Instantiate(r, Vector3.zero, Quaternion.identity);
+                        pole[i, j] = Instantiate(b, Vector3.zero, Quaternion.identity);
                         pocetV = +1;//tono
                     }
                     else if (typ == 3)
                     {
-                        pole[i, j] = Instantiate(r, Vector3.zero, Quaternion.identity);
+                        pole[i, j] = Instantiate(y, Vector3.zero, Quaternion.identity);
                         pocetV = +1;//tono
                     }
                     else
