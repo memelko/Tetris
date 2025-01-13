@@ -16,6 +16,7 @@ public class FallingBlock : MonoBehaviour
             fallTimer = 0;
         }
 
+
         // Handle horizontal and fast downward movement
         if (Input.GetKeyDown(KeyCode.LeftArrow) && CanMove(Vector2.left))
             transform.position += Vector3.left * 0.65f;

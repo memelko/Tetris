@@ -69,6 +69,10 @@ public class SpawnManager : MonoBehaviour
         {
             konecnaVScena();
         }
+        /*if (score > 2000)
+        {
+            float fallTimer= FindObjectOfType<FallingBlock>() +;
+        }*/
     }
     public void checker()
     {
@@ -120,7 +124,8 @@ public class SpawnManager : MonoBehaviour
                     pole[i + 1, j] = Instantiate(e, Vector3.zero, Quaternion.identity);
                     pole[i + 2, j] = Instantiate(e, Vector3.zero, Quaternion.identity);
                     pole[i + 3, j] = Instantiate(e, Vector3.zero, Quaternion.identity);
-                    pocetV = -4;//tono
+                   
+                         pocetV -= 4;//tono
                     
                 }
             }
@@ -134,7 +139,7 @@ public class SpawnManager : MonoBehaviour
 
         if (randomColor == 2) blockPrefab = TB;
         else if (randomColor == 3) blockPrefab = TY;
-
+        pocetV += 1;
         // Spawn block 
         currentBlock = Instantiate(blockPrefab, new Vector3(0.4f, 4.5f, 0), Quaternion.identity);
         currentBlock.AddComponent<FallingBlock>(); // click the scirpt to the block
